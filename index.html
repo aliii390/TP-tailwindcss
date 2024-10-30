@@ -65,8 +65,12 @@
 
     <header class="p-4">
       <div class="flex justify-between gap-[50%]">
-        <img src="./assets/images/logo.svg" alt="" class="w-[40px]" />
-        <a href="">
+        <img
+          src="./assets/images/logo.svg"
+          alt=""
+          class="w-[40px] sm:w-[90px]"
+        />
+        <a class="md:hidden" href="">
           <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
             <g fill="#00001A" fill-rule="evenodd">
               <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
@@ -74,6 +78,16 @@
             </g>
           </svg>
         </a>
+
+        <div class="hidden lg:flex md:hidden">
+          <ul>
+            <a href="">Home</a>
+            <a href="">New</a>
+            <a href="">Popular</a>
+            <a href="">Trending</a>
+            <a href="">Categories</a>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -84,7 +98,13 @@
         <img
           src="./assets/images/image-web-3-mobile.jpg"
           alt=""
-          class="w-[100%]"
+          class="w-[100%] md:hidden"
+        />
+
+        <img
+          src="./assets/images/image-web-3-desktop.jpg"
+          alt=""
+          class="w-[100%] max-md:hidden"
         />
 
         <div class="mt-[6%] flex flex-col gap-6">
@@ -112,7 +132,7 @@
 
       <!-- deuxieme section -->
 
-      <section class="bg-[#00001a]  p-[5%] mt-[15%]">
+      <section class="bg-[#00001a] p-[5%] mt-[15%]">
         <h2 class="font-[600] text-[#ecac54] text-[25px]">New</h2>
 
         <div class="p-4 flex flex-col gap-5">
@@ -150,14 +170,79 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <!-- fin de code -->
 
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    <!-- 3 eme section -->
+
+    <section class="flex  p-[4%] gap-12 max-md:flex-col lg:flex">
+      <article class="flex space-x-7">
+        <img
+          src="./assets/images/image-retro-pcs.jpg"
+          alt="image de pc retros"
+          class="w-[30%] object-cover"
+        />
+        <div class="flex flex-col gap-2">
+          <p class="text-[#c7c5ca] text-4xl font-bold">01</p>
+          <p class="font-bold text-neutral-very-dark-blue text-lg">
+            Reviving Retro PCs
+          </p>
+          <p class="text-neutral-dark-grayish-blue">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </article>
+
+      <article class="flex space-x-7">
+        <img
+          src="./assets/images/image-top-laptops.jpg"
+          alt="image de pc retros"
+          class="w-[30%] object-cover max-lg:w-[20%]object-cover"
+        />
+        <div class="flex flex-col gap-2">
+          <p
+            class="text-[#c7c5ca] text-neutral-grayish-blue text-4xl font-bold"
+          >
+            02
+          </p>
+          <p class="font-bold text-neutral-very-dark-blue text-lg">
+            Top 10 Laptops of 2022
+          </p>
+          <p class="text-neutral-dark-grayish-blue">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </article>
+
+      <article class="flex space-x-7">
+        <img
+          src="./assets/images/image-gaming-growth.jpg"
+          alt="image de pc retros"
+          class="w-[30%] object-cover"
+        />
+        <div class="flex flex-col gap-2">
+          <p
+            class="text-neutral-grayish-blue text-4xl font-bold text-[#c7c5ca]"
+          >
+            03
+          </p>
+          <p class="font-bold text-neutral-very-dark-blue text-lg">
+            Reviving Retro PCs
+          </p>
+          <p class="text-neutral-dark-grayish-blue">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- fin de code -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. Coded by
+      <a href="#">Your Name Here</a>.
+    </div>
   </body>
 </html>
