@@ -26,7 +26,7 @@
       }
     </style>
   </head>
-  <body class="font-body">
+  <body class="font-body lg:p-10">
     <!-- Home
   New
   Popular
@@ -63,12 +63,12 @@
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities. -->
 
-    <header class="p-4">
+    <header class="p-4 lg:items-center">
       <div class="flex justify-between gap-[50%]">
         <img
           src="./assets/images/logo.svg"
           alt=""
-          class="w-[40px] sm:w-[90px]"
+          class="w-[40px] sm:w-[90px] lg:w-[50px]"
         />
         <a class="md:hidden" href="">
           <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
@@ -79,8 +79,8 @@
           </svg>
         </a>
 
-        <div class="hidden lg:flex md:flex">
-          <ul>
+        <div class="hidden  md:flex">
+          <ul class="lg:gap-10 lg:flex lg:text-[#c7c5ca] lg:text-[15px]">
             <a href="">Home</a>
             <a href="">New</a>
             <a href="">Popular</a>
@@ -94,8 +94,8 @@
     <!-- premiere section -->
 
     <main class="p-3">
-      <div class="flex lg:gap-9 lg:p-4">
-        <section class="p-[1%] mt-[8%]">
+      <div class="lg:flex lg:gap-2 ">
+        <section class="p-[1%] max-lg:mt-[8%]">
           <img
             src="./assets/images/image-web-3-mobile.jpg"
             alt=""
@@ -138,22 +138,23 @@
 
         <!-- deuxieme section -->
 
-        <section class="bg-[#00001a] p-[5%] mt-[15%]">
+        <section class="bg-[#00001a] p-[5%] max-lg:mt-[15%]">
           <h2 class="font-[600] text-[#ecac54] text-[25px]">New</h2>
 
           <div class="p-4 flex flex-col gap-5">
-            <div class="">
+
+            <!-- <div class=""> -->
               <h3 class="text-[#ffff] font-bold text-[20px]">
                 Hydrogen VS Electric Cars
               </h3>
               <p class="text-neutral-dark-grayish-blue text-[15px]">
                 Will hydrogen-fueled cars ever catch up to EVs?
               </p>
-            </div>
+            <!-- </div> -->
 
             <hr class="border-neutral-dark-grayish-blue" />
 
-            <div class="">
+            <!-- <div class=""> -->
               <h3 class="text-[#ffff] font-bold text-[20px]">
                 The Downsides of AI Artistry
               </h3>
@@ -161,7 +162,7 @@
                 What are the possible adverse effects of on-demand AI image
                 generation?
               </p>
-            </div>
+            <!-- </div> -->
 
             <hr class="border-neutral-dark-grayish-blue" />
 
